@@ -12,33 +12,24 @@ The pattern is that it will need formulas form the math library and display it
 The calculated answer will be display by its own print
 
 ## Algorithm Development
-/ Circular Garden Calculator /
+START
+    IMPORT math
 
-// Get the radius input of the user in metres
-radius = input("Please enter the radius in meters: ")
-radius = float(radius) // convert to a floating‑point number
+    INPUT radius (as float)
 
-// Calculate the area using π r²
-area = math.PI pow(radius, 2)
+    area = math.pi * math.pow(radius, 2)
+    circumference = 2 * math.pi * radius
+    square_root = math.sqrt(radius)
 
-// Calculate the circumference using 2 π r
-circumference = 2 math.PI radius
+    rounded_up = math.ceil(area)
+    rounded_down = math.floor(area)
 
-// Calculate the square root of the radius
-square_root = sqrt(radius)
-
-// Round the area up to the nearest whole number
-rounded_up = ceil(area)
-
-// Round the area down to the nearest whole number
-rounded_down = floor(area)
-
-// Output all of the results
-print("The area of the garden is: " + format(area, ".2f"))
-print("The circumference of the garden is: " + format(circumference, ".2f"))
-print("The square root of the radius is: " + format(square_root, ".2f"))
-print("The rounded‑up area is: " + format(rounded_up, ".2f"))
-print("The rounded‑down area is: " + format(rounded_down, ".2f"))
+    DISPLAY "The area of the garden is:", area (2 decimal places)
+    DISPLAY "The circumference of the garden is:", circumference (2 decimal places)
+    DISPLAY "The square of the garden is:", square_root (2 decimal places)
+    DISPLAY "The rounded up area is:", rounded_up (2 decimal places)
+    DISPLAY "The rounded down area is:", rounded_down (2 decimal places)
+END
 
 # Project Title: Circular Garden Calculator
 

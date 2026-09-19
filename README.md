@@ -3,7 +3,13 @@ The problem is that you will need to develop a Python program that will determin
 a radius entered by the user.
 
 ## Problem Decomposition
-I will need to break the task down into each unit that will require a solution from the math library
+I will need to break the task down into each unit that will require a solution from the math library.
+First: Get the radius from the user
+Second: Calculate the area
+Third: Calculate the circumference
+Fourth: Calculate the square root
+Fifth: Round the area up and down
+Sixth: Display the results
 
 ## Pattern Recognition
 The pattern is that it will need formulas form the math library and display it
